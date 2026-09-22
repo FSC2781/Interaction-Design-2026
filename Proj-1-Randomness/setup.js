@@ -12,66 +12,66 @@ async function setup() {
   createCanvas(room.width, room.height);
 
   /// IMAGES ///
-  img_door = await loadImage("/Assets/Decor/door.png");
-  img_counter = await loadImage("/Assets/Decor/counter.png");
-  img_barista = await loadImage("/Assets/NPC/barista.png");
-  img_item = await loadImage("/Assets/items/dcc_frap.png");
-  img_table = await loadImage("/Assets/Decor/table.png");
-  img_chair = await loadImage("/Assets/Decor/chair.png");
-  img_arrow = await loadImage("/Assets/Decor/arrow.png");
+  img_door = await loadImage("Assets/Decor/door.png");
+  img_counter = await loadImage("Assets/Decor/counter.png");
+  img_barista = await loadImage("Assets/NPC/barista.png");
+  img_item = await loadImage("Assets/items/dcc_frap.png");
+  img_table = await loadImage("Assets/Decor/table.png");
+  img_chair = await loadImage("Assets/Decor/chair.png");
+  img_arrow = await loadImage("Assets/Decor/arrow.png");
 
   // NPCs //
   // arr_NPC_spr_S_paths = [
-  //   "/Assets/NPC/NPC-side-00.png",
-  //   "/Assets/NPC/NPC-side-01.png"
+  //   "Assets/NPC/NPC-side-00.png",
+  //   "Assets/NPC/NPC-side-01.png"
   //               ];
   // // arr_NPC_spr.push(img_npc0F)
 
-  // // img_npc0S = await loadImage("/Assets/NPC/NPC-front-00.png");
+  // // img_npc0S = await loadImage("Assets/NPC/NPC-front-00.png");
   // arr_NPC_spr_F_paths = [
-  //   "/Assets/NPC/NPC-front-00.png",
-  //   "/Assets/NPC/NPC-front-01.png"
+  //   "Assets/NPC/NPC-front-00.png",
+  //   "Assets/NPC/NPC-front-01.png"
   // ];
 
   arr_NPC_paths = [
     {
-      "side": "/Assets/NPC/NPC-side-00.png",
-      "front": "/Assets/NPC/NPC-front-00.png"
+      "side": "Assets/NPC/NPC-side-00.png",
+      "front": "Assets/NPC/NPC-front-00.png"
     },
     {
-      "side": "/Assets/NPC/NPC-side-01.png",
-      "front": "/Assets/NPC/NPC-front-01.png"
+      "side": "Assets/NPC/NPC-side-01.png",
+      "front": "Assets/NPC/NPC-front-01.png"
     },
     {
-      "side": "/Assets/NPC/NPC-side-02.png",
-      "front": "/Assets/NPC/NPC-front-02.png"
+      "side": "Assets/NPC/NPC-side-02.png",
+      "front": "Assets/NPC/NPC-front-02.png"
     },
     {
-      "side": "/Assets/NPC/NPC-side-03.png",
-      "front": "/Assets/NPC/NPC-front-03.png"
+      "side": "Assets/NPC/NPC-side-03.png",
+      "front": "Assets/NPC/NPC-front-03.png"
     },
     {
-      "side": "/Assets/NPC/NPC-side-04.png",
-      "front": "/Assets/NPC/NPC-front-04.png"
+      "side": "Assets/NPC/NPC-side-04.png",
+      "front": "Assets/NPC/NPC-front-04.png"
     },
     {
-      "side": "/Assets/NPC/NPC-side-04.png",
-      "front": "/Assets/NPC/NPC-front-04.png"
+      "side": "Assets/NPC/NPC-side-04.png",
+      "front": "Assets/NPC/NPC-front-04.png"
     },
     {
-      "side": "/Assets/NPC/NPC-side-05.png",
-      "front": "/Assets/NPC/NPC-front-05.png"
+      "side": "Assets/NPC/NPC-side-05.png",
+      "front": "Assets/NPC/NPC-front-05.png"
     },
     {
-      "side": "/Assets/NPC/NPC-side-06.png",
-      "front": "/Assets/NPC/NPC-front-06.png"
+      "side": "Assets/NPC/NPC-side-06.png",
+      "front": "Assets/NPC/NPC-front-06.png"
     }
   ];
   print("0: " + arr_NPC_paths[0]);
   print("1: " + arr_NPC_paths[1]);
   // for (let i=0; i < 1; i++){
-  //   let sprNameS = "/Assets/NPC/NPC-side-0" + i + ".png";
-  //   let sprNameF = "/Assets/NPC/NPC-front-0" + i + ".png";
+  //   let sprNameS = "Assets/NPC/NPC-side-0" + i + ".png";
+  //   let sprNameF = "Assets/NPC/NPC-front-0" + i + ".png";
   //   arr_NPC_paths.push({"side": sprNameS, "front": sprNameF});
   // };
 
@@ -97,8 +97,8 @@ async function setup() {
   // arr_NPC_spr = [];
   // for (let i=0; i < 1; i++){
   //   //let tag = i;
-  //   let sprName = "/Assets/NPC/NPC-side-0" + i + ".png";
-  //   //let sprName = "/Assets/NPC/NPC-side-00.png"
+  //   let sprName = "Assets/NPC/NPC-side-0" + i + ".png";
+  //   //let sprName = "Assets/NPC/NPC-side-00.png"
   //   console.log(JSON.stringify(sprName), sprName.length);
   //   let newSprite = await loadImage(sprName);
   //   arr_NPC_spr.push(newSprite)
@@ -108,18 +108,18 @@ async function setup() {
   
   // Items
   arr_items_paths = [
-    "/Assets/items/drinks_00.png",
-    "/Assets/items/drinks_01.png",
-    "/Assets/items/drinks_02.png",
-    "/Assets/items/drinks_03.png",
-    "/Assets/items/drinks_04.png",
-    "/Assets/items/drinks_05.png",
-    "/Assets/items/drinks_06.png",
-    "/Assets/items/drinks_07.png"
+    "Assets/items/drinks_00.png",
+    "Assets/items/drinks_01.png",
+    "Assets/items/drinks_02.png",
+    "Assets/items/drinks_03.png",
+    "Assets/items/drinks_04.png",
+    "Assets/items/drinks_05.png",
+    "Assets/items/drinks_06.png",
+    "Assets/items/drinks_07.png"
   ];
   // for (let i=0; i < 1; i++){
-  //   let sprNameS = "/Assets/NPC/NPC-side-0" + i + ".png";
-  //   let sprNameF = "/Assets/NPC/NPC-front-0" + i + ".png";
+  //   let sprNameS = "Assets/NPC/NPC-side-0" + i + ".png";
+  //   let sprNameF = "Assets/NPC/NPC-front-0" + i + ".png";
   //   arr_NPC_paths.push({"side": sprNameS, "front": sprNameF});
   // };
 
