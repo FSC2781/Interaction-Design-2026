@@ -16,3 +16,5 @@ Here is my journal [test](journal/8.20.26.md)
 
 ## Game
 ![Game](https://fsc2781.github.io/Interaction-Design-2026/Proj-1-Randomness/sketch.js)
+If the hyperlink isn't working:
+https://fsc2781.github.io/Interaction-Design-2026/Proj-1-Randomness/sketch.js
