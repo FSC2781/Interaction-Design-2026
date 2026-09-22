@@ -49,6 +49,22 @@ async function setup() {
     {
       "side": "/Assets/NPC/NPC-side-03.png",
       "front": "/Assets/NPC/NPC-front-03.png"
+    },
+    {
+      "side": "/Assets/NPC/NPC-side-04.png",
+      "front": "/Assets/NPC/NPC-front-04.png"
+    },
+    {
+      "side": "/Assets/NPC/NPC-side-04.png",
+      "front": "/Assets/NPC/NPC-front-04.png"
+    },
+    {
+      "side": "/Assets/NPC/NPC-side-05.png",
+      "front": "/Assets/NPC/NPC-front-05.png"
+    },
+    {
+      "side": "/Assets/NPC/NPC-side-06.png",
+      "front": "/Assets/NPC/NPC-front-06.png"
     }
   ];
   print("0: " + arr_NPC_paths[0]);
