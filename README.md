@@ -13,3 +13,6 @@ Hey check out this **cool** image
 
 ### Journal Example
 Here is my journal [test](journal/8.20.26.md)
+
+## Game
+<script src="demo//sketch.js"></script> 
