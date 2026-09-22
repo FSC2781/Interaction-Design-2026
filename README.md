@@ -15,4 +15,4 @@ Hey check out this **cool** image
 Here is my journal [test](journal/8.20.26.md)
 
 ## Game
-![Game](demo/Kindhearted starflower_2026_09_16_00_07_06/sketch.js)
+![Game]([demo/Kindhearted starflower_2026_09_16_00_07_06/sketch.js](https://fsc2781.github.io/Interaction-Design-2026/demo/Kindhearted%20starflower_2026_09_16_00_07_06/))
