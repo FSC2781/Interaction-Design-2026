@@ -8,10 +8,10 @@ let roomData = {width: 960,
 
 // Data from US census
 const statePop = {
-  "California":     39555703,
-  "Texas":          29149498,
-  "Florida":        21538207,
-  "Georgia":        10713861,
+  "California": 39555703,
+  "Texas": 29149498,
+  "Florida": 21538207,
+  "Georgia": 10713861,
   "North Carolina": 10441392,
   "Vermont": 647722,
   "Rhode Island": 1101183,

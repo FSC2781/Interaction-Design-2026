@@ -1,8 +1,8 @@
-function hourMultiplier(d, hour) {
-  const rows = d.by_hour;
+function hourMultiplier(_data, _hour) {
+  const rows = _data.by_hour;
   if (!rows) {return 1};
-  const total = rows.reduce((s, r) => s + r.crashes, 0);
-  const row = rows.find(r => parseInt(r.hour) == hour);
+  const total = rows.reduce(function (s, r) { return s + r.crashes; }, 0);
+  const row = rows.find(function (r) { return parseInt(r.hour) == _hour; });
   if (!row || total == 0) {return 1};
   return (row.crashes / total) * 24;
 }
@@ -12,7 +12,7 @@ function weatherMultiplier(data, weatherIdx) {
   if (!rows) {return 1};
 
   const countFor = function (name) {
-    const row = rows.find(function (r) { return r.weather == name; });
+    const row = rows.find(function (r) {return r.weather == name});
     return row ? row.crashes : 0;
   };
 

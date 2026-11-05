@@ -3,7 +3,7 @@ class Character {
     this.stateIdx = _stateIdx;
     this.state = stateArr[_stateIdx];
     this.id = plrArr.length;
-    this.loc = { x: 0, y: 0 };
+    this.loc = {x: 0, y: 0};
     plrArr.push(this);
   }
 

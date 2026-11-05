@@ -32,14 +32,14 @@ class Button {
   }
 }
 
-function arrowSprite(dir) {
-  return function (w, h, a, hovered) {
+function arrowSprite(_dir) {
+  return function (_w, _h, _alpha, _hovered) {
     noStroke();
-    fill(hovered ? 255 : 180, a);
-    if (dir < 0) {
-      triangle(w, 0, 0, h / 2, w, h)
+    fill(_hovered ? 255 : 180, _alpha);
+    if (_dir < 0) {
+      triangle(_w, 0, 0, _h / 2, _w, _h)
     } else {
-      triangle(0, 0, w, h / 2, 0, h)
+      triangle(0, 0, _w, _h / 2, 0, _h)
     };
   };
 }

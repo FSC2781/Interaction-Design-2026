@@ -23,11 +23,11 @@ function makeStateButtons() {
   const offsetY = 90;    // same y as the state text
 
   for (let plr of plrArr) {   // `let` in a for...of gives each button its own plr
-    new Button(() => plr.cycleState(-1),
+    new Button(function () {plr.cycleState(-1)},
       plr.loc.x - offsetX - size / 2, plr.loc.y + offsetY - size / 2,
       size, size, arrowSprite(-1));
 
-    new Button(() => plr.cycleState(1),
+    new Button(function () {plr.cycleState(1)},
       plr.loc.x + offsetX - size / 2, plr.loc.y + offsetY - size / 2,
       size, size, arrowSprite(1));
   }
@@ -37,13 +37,13 @@ function makeEnvButtons() {
   const size = 24, cy = 34, off = 80;
   const groups = [
     { cx: roomData.width * 0.3,
-      step: dir => { env.hour = (env.hour + dir + 24) % 24; } },
+      step: function (dir) { env.hour = (env.hour + dir + 24) % 24; } },
     { cx: roomData.width * 0.7,
-      step: dir => { env.weather = (env.weather + dir + weatherOptions.length) % weatherOptions.length; } },
+      step: function (dir) { env.weather = (env.weather + dir + weatherOptions.length) % weatherOptions.length; } },
   ];
   for (let g of groups) {
-    new Button(() => g.step(-1), g.cx - off - size / 2, cy - size / 2, size, size, arrowSprite(-1));
-    new Button(() => g.step(1),  g.cx + off - size / 2, cy - size / 2, size, size, arrowSprite(1));
+    new Button(function () {g.step(-1)}, g.cx - off - size / 2, cy - size / 2, size, size, arrowSprite(-1));
+    new Button(function () {g.step(1)}, g.cx + off - size / 2, cy - size / 2, size, size, arrowSprite(1));
   }
 }
 
