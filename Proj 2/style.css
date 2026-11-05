@@ -6,3 +6,24 @@ html, body {
 canvas {
   display: block;
 }
+
+body {
+  font-family: sans-serif; /* optional */
+}
+
+header, main {
+  text-align: center;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+#instructions,
+#other {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

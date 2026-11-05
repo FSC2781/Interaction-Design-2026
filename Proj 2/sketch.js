@@ -38,7 +38,8 @@ function gotData(result){
 };
 
 function setup() {
-  createCanvas(960, 540);
+  canvas = createCanvas(960, 540);
+  canvas.parent("game");
 
   let plrCount = 2;
   for (let i = 0; i < plrCount; i++) {

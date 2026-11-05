@@ -7,8 +7,8 @@ class Character {
     plrArr.push(this);
   }
 
-  cycleState(dir) {
-    this.stateIdx = (this.stateIdx + dir + stateArr.length) % stateArr.length;
+  cycleState(_dir) {
+    this.stateIdx = (this.stateIdx + _dir + stateArr.length) % stateArr.length;
     this.state = stateArr[this.stateIdx];
   }
 
